@@ -169,6 +169,18 @@ $('#ButtonPage32').click(function() {
 $('#ButtonPage33').click(function() {
 	window.location.href = '#page3';
 });	
+<!--This is a comment. Animal button click handler-->
+$("#selectedAnimal").bind ("change", function (event)
+{
+  var selectedAnimal=$(':selected').text();
+  if (selectedAnimal=="Option1OffDog") {
+		document.getElementById("selectedAnimalPicture").src="img/dog.jpg";
+  } else if (selectedAnimal=="Option1OffCat") {
+	document.getElementById("selectedAnimalPicture").src="img/cat.jpg";
+  } else if (selectedAnimal=="Option1OffBird") {
+	document.getElementById("selectedAnimalPicture").src="img/bird.jpg";
+  }
+});
 </script>		
 		
     </body>
