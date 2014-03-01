@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="header">
+                <h1>Keith's Sample App.1</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="ButtomPage11" data-rel="page">Button1</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="ButtonPage12">Button2</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="ButtonPage13" data-rel="page">Button3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <label for="text1">Text Input (Name)</label>
+                    <input type="text" id="text1">
+                </div>
+                <div data-role="fieldcontain" id="slider1">
+                    <label for="slider1-range">Your Age</label>
+                    <input type="range" id="slider1-range" value="50" min="0" max="100"
+                    step="1">
+                </div>
+                <select data-native-menu="false">
+                    <option value="Value">Option1</option>
+                    <option value="Value">Option2</option>
+                    <option value="Value">Option3</option>
+                </select>
+                <fieldset data-role="controlgroup">
+                    <legend></legend>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Checkbox1 NofM</label>
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">Checkbox2 NofM</label>
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <legend></legend>
+                    <input type="radio" id="radio1" name="radio1" checked="checked">
+                    <label for="radio1">Radio Button1 1ofMany</label>
+                    <input type="radio" id="radio2" name="radio1">
+                    <label for="radio2">Radio Button2 1ofMany</label>
+                </fieldset>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <select data-role="slider">
+                            <option value="off">Off</option>
+                            <option value="on">On</option>
+                        </select>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button">Button</a>
+                    </div>
+                </div>
+                <textarea placeholder="Private readonly; Set by Keith">Read only Text presented to the user area.</textarea>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-role="header">
+                <h1>Keith's Sample App.2</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="ButtonPage21">Button1</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="ButtonPage22">Button2</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="ButtonPage23">Button3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <select data-native-menu="false">
+                            <option value="Value">Option1</option>
+                            <option value="Value">Option2</option>
+                            <option value="Value">Option3</option>
+                        </select>
+                    </div>
+                    <div class="ui-block-b">
+                        <img src="" width="200" height="200">
+                    </div>
+                </div>
+                <div class="div-widget">
+                    <div data-role="fieldcontain" id="rating">
+                        <label for="rating-range">Vote (1-10: 10=Best)</label>
+                        <input type="range" id="rating-range" value="1" min="1"
+                        max="10" step="1">
+                    </div>
+                </div>
+                <div data-role="collapsible" id="collapseArea">
+                    <h1>Collapsible Area</h1>
+                    <div class="div-widget"></div>
+                </div>
+                <ol data-role="listview" data-inset="true">
+                    <li>List Item #1</li>
+                    <li>List Item #2</li>
+                    <li>List Item #3</li>
+                </ol>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-role="header">
+                <h1>Keith's Sample App.3</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="ButtonPage31">Button1</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="ButtonPage32">Button2</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="ButtonPage33">Button3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content"></div>
+        </div>
+		
+		<script>    
+		$('#ButtonPage11').click(function() {
+			window.location.href = '#page1';
+		});	
+		$('#ButtonPage12').click(function() {
+			window.location.href = '#page2';
+		});	
+		$('#ButtonPage13').click(function() {
+			window.location.href = '#page3';
+		});	
+		$('#ButtonPage21').click(function() {
+			window.location.href = '#page1';
+			$(":#ButtonPage11")
+		});	
+		$('#ButtonPage22').click(function() {
+			window.location.href = '#page2';
+		});	
+		$('#ButtonPage23').click(function() {
+			window.location.href = '#page3';
+		});	
+		$('#ButtonPage31').click(function() {
+			window.location.href = '#page1';
+		});	
+		$('#ButtonPage32').click(function() {
+			window.location.href = '#page2';
+		});	
+		$('#ButtonPage33').click(function() {
+			window.location.href = '#page3';
+		});	
+		</script>		
+    </body>
+
+</html>
