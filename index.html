@@ -12,7 +12,7 @@
     
     <body>
         <div data-role="page" id="page1">
-            <div data-role="header">
+            <div data-role="header" id="appTitle">
                 <h1>Keith's Sample App.1</h1>
                 <div data-role="navbar">
                     <ul>
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div data-role="page" id="page2">
-            <div data-role="header">
+            <div data-role="header" id="appTitle">
                 <h1>Keith's Sample App.2</h1>
                 <div data-role="navbar">
                     <ul>
@@ -89,16 +89,17 @@
                 </div>
             </div>
             <div data-role="content">
+				<label for="male">What do you think Man's Best Friend is?</label>
                 <div class="ui-grid-a">
                     <div class="ui-block-a">
-                        <select data-native-menu="false">
-                            <option value="Value">Option1</option>
-                            <option value="Value">Option2</option>
-                            <option value="Value">Option3</option>
+                        <select data-native-menu="false" id="selectedAnimal">
+                            <option value="Value">Dog</option>
+                            <option value="Value">Cat</option>
+                            <option value="Value">Bird</option>
                         </select>
                     </div>
                     <div class="ui-block-b">
-                        <img src="" width="200" height="200">
+                        <img id="selectedAnimalPicture" src="" width="200" height="200">
                     </div>
                 </div>
                 <div class="div-widget">
@@ -113,14 +114,14 @@
                     <div class="div-widget"></div>
                 </div>
                 <ol data-role="listview" data-inset="true">
-                    <li>List Item #1</li>
-                    <li>List Item #2</li>
-                    <li>List Item #3</li>
+                    <li>List Item #1 - readonly</li>
+                    <li>List Item #2 - readonly</li>
+                    <li>List Item #3 - readonly</li>
                 </ol>
             </div>
         </div>
         <div data-role="page" id="page3">
-            <div data-role="header">
+            <div data-role="header" id="appTitle">
                 <h1>Keith's Sample App.3</h1>
                 <div data-role="navbar">
                     <ul>
@@ -139,36 +140,37 @@
             <div data-role="content"></div>
         </div>
 		
-		<script>    
-		$('#ButtonPage11').click(function() {
-			window.location.href = '#page1';
-		});	
-		$('#ButtonPage12').click(function() {
-			window.location.href = '#page2';
-		});	
-		$('#ButtonPage13').click(function() {
-			window.location.href = '#page3';
-		});	
-		$('#ButtonPage21').click(function() {
-			window.location.href = '#page1';
-			$(":#ButtonPage11")
-		});	
-		$('#ButtonPage22').click(function() {
-			window.location.href = '#page2';
-		});	
-		$('#ButtonPage23').click(function() {
-			window.location.href = '#page3';
-		});	
-		$('#ButtonPage31').click(function() {
-			window.location.href = '#page1';
-		});	
-		$('#ButtonPage32').click(function() {
-			window.location.href = '#page2';
-		});	
-		$('#ButtonPage33').click(function() {
-			window.location.href = '#page3';
-		});	
-		</script>		
+<script>    
+$('#ButtonPage11').click(function() {
+	window.location.href = '#page1';
+});	
+$('#ButtonPage12').click(function() {
+	window.location.href = '#page2';
+});	
+$('#ButtonPage13').click(function() {
+	window.location.href = '#page3';
+});	
+$('#ButtonPage21').click(function() {
+	window.location.href = '#page1';
+	$(":#ButtonPage11")
+});	
+$('#ButtonPage22').click(function() {
+	window.location.href = '#page2';
+});	
+$('#ButtonPage23').click(function() {
+	window.location.href = '#page3';
+});	
+$('#ButtonPage31').click(function() {
+	window.location.href = '#page1';
+});	
+$('#ButtonPage32').click(function() {
+	window.location.href = '#page2';
+});	
+$('#ButtonPage33').click(function() {
+	window.location.href = '#page3';
+});	
+</script>		
+		
     </body>
 
 </html>
